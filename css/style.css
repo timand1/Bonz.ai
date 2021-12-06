@@ -14,7 +14,7 @@ body {
 
 /* Typography */
 h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     letter-spacing: 0.5rem;
 }
 
@@ -27,13 +27,14 @@ p {
 /* Wrapper */
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-areas: 
     "header"
     "main"
     "info"
     "footer";
 }
+
 
 /* Header */
 .header__content--desktop {
@@ -288,8 +289,7 @@ input:checked ~ .menu {
 }
 
 .food__container > * {
-    max-width: 500px;
-    min-height: 500px;
+    max-width: 100%;
     aspect-ratio: 1;
 }
 
@@ -473,11 +473,11 @@ input:checked ~ .menu {
 
 /* About page main */
 .about__main {    
-    max-width: 1000px;
+    grid-area: info;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    grid-area: info;
+    flex-direction: column;    
 }
 
 .about__main > * {
@@ -556,7 +556,11 @@ input:checked ~ .menu {
         flex-direction: row;
         margin: 3rem 0;
     }    
+
     .food__container > * {
+        max-width: 500px;
+        min-height: 500px;
+        aspect-ratio: 1;
         margin: 2rem 0;
     }
 
@@ -586,6 +590,7 @@ input:checked ~ .menu {
     .about__main {
         display: flex;
         flex-direction: column;
+        max-width: 1000px;
     }
     
     .about__card {
