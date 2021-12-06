@@ -164,7 +164,7 @@ input:checked ~ .menu {
 .menu .menu__links, .menu--desktop .menu__links {    
     text-decoration: none;
     color: #000;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
 }
 
 .menu .menu__links:visited, .menu--desktop .menu__links:visited {
