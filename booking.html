@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bonz.ai Booking</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header__content">
+            <nav class="menu"></nav>
+            <a class="logo" href="#"><img class="logo__image" src="/assets/logo/bonz.ai-logo-black_symbol.svg" alt="Logo image"></a>
+            <input class="menu__checkbox" type="checkbox">
+            <i class="fa fa-bars"></i>
+            <nav class="menu">            
+                <ul>
+                    <li class="menu__items"><a href="/index.html" class="menu__links">Home</a></li>
+                    <li class="menu__items"><a href="/about.html" class="menu__links">About Us</a></li>
+                    <li class="menu__items"><a href="/booking.html" class="menu__links">Rooms</a></li>
+                    <li class="menu__items"><a href="#" class="menu__links">Special Offers</a></li>
+                </ul>
+            </nav>
+        </header>
+        <header class="header__content--desktop">
+            <nav class="menu--desktop">
+                <a class="logo" href="#"><img class="logo__image" src="/assets/logo/bonz.ai-logo-black_landscape.svg" alt="Logo image"></a>
+                <ul>
+                    <li class="menu__items"><a href="" class="menu__links">Home</a></li>
+                    <li class="menu__items"><a href="" class="menu__links">About Us</a></li>
+                    <li class="menu__items"><a href="" class="menu__links">Rooms</a></li>
+                    <li class="menu__items"><a href="" class="menu__links">Special Offers</a></li>
+                </ul>
+            </nav>
+        </header>
+        <header>
+            <h1>ROOM BOOKING</h1>
+        </header>
+        <form class="booking">
+            <section class="booking__start">
+                <label for="start">Start date:</label>
+                <input type="date" id="start" name="trip-start" value="2021-12-10" min="2021-12-10" max="2022-02-28">
+            </section>
+            <section class="booking__end">
+                <label for="end">End date:</label>
+                <input type="date" id="end" name="trip-end" value="2021-12-10" min="2021-12-10" max="2022-02-28">
+            </section>
+            <section class="room">
+                <label for="rooms">Room Type</label>
+                <select name="rooms" id="rooms">
+                    <option value="option-1">1 room</option>
+                    <option value="option-2">2 rooms</option>
+                    <option value="option-3">3 rooms</option>
+                    <option value="option-4">4 rooms</option>
+                    <option value="option-5">Any available</option>
+                </select>
+            </section>
+            <section class="gender">
+                <label for="gender">Titel</label>
+                <select name="gender" id="gender">
+                    <option value="option-1">Ms.</option>
+                    <option value="option-2">Mr.</option>
+                    <option value="option-3">Other</option>
+                </select>
+            </section>
+            <section class="first--name">
+                <label for="first-name">First name</label>
+                <input type="text" name="first-name" id="first-name">
+            </section>
+            <section class="last--name">
+                <label for="last-name">Last name</label>
+                <input type="text" name="last-name" id="last-name">
+            </section>
+            <section class="booking__taxi">
+                <input type="radio" name="option" id="taxi">
+                <label for="taxi">Taxi</label>
+            </section>
+            <section class="booking__taxi">
+                <input type="radio" name="option" id="taxi">
+                <label for="taxi">No taxi</label>
+            </section>
+            <section class="terms">
+                <input type="checkbox" name="conditions" id="conditions">
+                <p>I  agree to BONZ.AI's terms and conditions</p>
+            </section>
+            <button class="page__btn">BOOK ROOM</button>
+        </form>
+    </div>
+    <footer class="footer__content">
+        <h2>Connect with us</h2>
+        <section class="social-media__icons">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" class="fa fa-youtube"></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" class="fa fa-instagram"></a>
+        </section>
+        <section class="footer__links">
+            <ul>
+                <nav class="footer__links--left">
+                    <li class="footer__items"><a href="/about.html" class="footer__link">ABOUT US</a></li>
+                    <li class="footer__items"><a href="" class="footer__link">CAREER</a></li>
+                    <li class="footer__items"><a href="" class="footer__link">PRIVACY</a></li>
+                </nav>
+                <nav class="footer__links--right">
+                    <li class="footer__items"><a href="" class="footer__link">MEDIA</a></li>
+                    <li class="footer__items"><a href="" class="footer__link">CONTACT</a></li>
+                </nav>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
