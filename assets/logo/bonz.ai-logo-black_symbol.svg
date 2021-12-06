@@ -1,0 +1,26 @@
+<svg width="290" height="290" viewBox="0 0 290 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1" fill="white">
+<rect x="43.874" y="42.4697" width="205.061" height="205.061" rx="6"/>
+</mask>
+<rect x="43.874" y="42.4697" width="205.061" height="205.061" rx="6" stroke="#111111" stroke-opacity="0.6" stroke-width="62" mask="url(#path-1-inside-1)"/>
+<mask id="path-2-inside-2" fill="white">
+<rect x="145" width="205.061" height="205.061" rx="6" transform="rotate(45 145 0)"/>
+</mask>
+<rect x="145" width="205.061" height="205.061" rx="6" transform="rotate(45 145 0)" stroke="#111111" stroke-opacity="0.6" stroke-width="62" mask="url(#path-2-inside-2)"/>
+<mask id="path-3-inside-3" fill="white">
+<rect x="73.3691" y="19.4263" width="205.061" height="205.061" rx="6" transform="rotate(15 73.3691 19.4263)"/>
+</mask>
+<rect x="73.3691" y="19.4263" width="205.061" height="205.061" rx="6" transform="rotate(15 73.3691 19.4263)" stroke="#111111" stroke-opacity="0.6" stroke-width="62" mask="url(#path-3-inside-3)"/>
+<mask id="path-4-inside-4" fill="white">
+<rect x="182.922" y="4.94092" width="205.061" height="205.061" rx="6" transform="rotate(60 182.922 4.94092)"/>
+</mask>
+<rect x="182.922" y="4.94092" width="205.061" height="205.061" rx="6" transform="rotate(60 182.922 4.94092)" stroke="#111111" stroke-opacity="0.6" stroke-width="62" mask="url(#path-4-inside-4)"/>
+<mask id="path-5-inside-5" fill="white">
+<rect x="218.035" y="19.4263" width="205.061" height="205.061" rx="6" transform="rotate(75 218.035 19.4263)"/>
+</mask>
+<rect x="218.035" y="19.4263" width="205.061" height="205.061" rx="6" transform="rotate(75 218.035 19.4263)" stroke="#111111" stroke-opacity="0.6" stroke-width="62" mask="url(#path-5-inside-5)"/>
+<mask id="path-6-inside-6" fill="white">
+<rect x="285.453" y="107.471" width="205.061" height="205.061" rx="6" transform="rotate(120 285.453 107.471)"/>
+</mask>
+<rect x="285.453" y="107.471" width="205.061" height="205.061" rx="6" transform="rotate(120 285.453 107.471)" stroke="#111111" stroke-opacity="0.6" stroke-width="62" mask="url(#path-6-inside-6)"/>
+</svg>
