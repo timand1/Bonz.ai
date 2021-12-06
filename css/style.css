@@ -213,7 +213,7 @@ input:checked ~ .menu {
 }
 
 .main__heading {
-    width: 80%;
+    max-width: 600px;
     align-self: center;
 }
 
