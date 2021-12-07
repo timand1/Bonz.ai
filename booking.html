@@ -29,62 +29,72 @@
                 <h1>HOTEL BOOKING</h1>
             </section>
         </header>
-        <form class="booking main">
+        <main class="main main--form">            
             <h2>BOOKING FORM</h2>
-            <section class="form__date">
-                <article class="form__date--start">
-                    <label for="start">Start date:</label>
-                    <input type="date" id="start" name="trip-start" value="2021-12-10" min="2021-12-10" max="2022-02-28">
-                </article>
-                <article class="form__date--end">
-                    <label for="end">End date:</label>
-                    <input type="date" id="end" name="trip-end" value="2021-12-10" min="2021-12-10" max="2022-02-28">
-                </article>
-            </section>
-            <section class="form__room">
-                <label for="rooms">Room Type</label>
-                <select name="rooms" id="rooms">
-                    <option value="option-1">1 room</option>
-                    <option value="option-2">2 rooms</option>
-                    <option value="option-3">3 rooms</option>
-                    <option value="option-4">4 rooms</option>
-                    <option value="option-5">Any available</option>
-                </select>
-            </section>
-            <section class="form__gender">
-                <label for="gender">Titel</label>
-                <select name="gender" id="gender">
-                    <option value="option-1">Ms.</option>
-                    <option value="option-2">Mr.</option>
-                    <option value="option-3">Other</option>
-                </select>
-            </section>
-            <section class="form__name--first">
-                <label for="first-name">First name</label>
-                <input type="text" name="first-name" id="first-name">
-            </section>
-            <section class="form__name--last">
-                <label for="last-name">Last name</label>
-                <input type="text" name="last-name" id="last-name">
-            </section>
-            <section class="form__email">
-                <label for="first-name">Email</label>
-                <input type="text" name="email" id="email">
-            </section>
-            <section class="form__taxi--yes">
-                <input type="radio" name="option" id="taxi-yes">
-                <label for="taxi-yes">Taxi</label>
-            </section>
-            <section class="form__taxi--no">
-                <input type="radio" name="option" id="taxi-no">
-                <label for="taxi-no">No taxi</label>
-            </section>
-            <section class="form__terms">
-                <input type="checkbox" name="conditions" id="conditions">
-                <p>I  agree to BONZ.AI's terms and conditions</p>
-            </section>
-            <button class="page__btn">RESERVE</button>
-        </form>
+            <form class="form">
+                <section class="form__container form__container--date">
+                    <article class="form__container form__container--start">
+                        <label for="start">Arrival</label>
+                        <input type="date" id="start" name="trip-start" value="2021-12-10" min="2021-12-10" max="2022-02-28">
+                    </article>
+                    <article class="form__container form__container--end">
+                        <label for="end">Departure</label>
+                        <input type="date" id="end" name="trip-end" value="2021-12-10" min="2021-12-10" max="2022-02-28">
+                    </article>
+                </section>
+                <section class="form__container form__container--select">
+                    <label for="rooms">Room type</label>
+                    <select name="rooms" id="rooms">
+                        <option value="option-1">1 room</option>
+                        <option value="option-2">2 rooms</option>
+                        <option value="option-3">3 rooms</option>
+                        <option value="option-4">4 rooms</option>
+                        <option value="option-5">Any available</option>
+                    </select>
+                </section>
+                <section class="form__container form__container--amount">
+                    <label for="adult">Adults</label>
+                    <input type="number" id="adult" min="0" max="10" placeholder="2">
+                </section>
+                <section class="form__container form__container--amount">
+                    <label for="child">Children</label>
+                    <input type="number" id="child" min="0" max="10" placeholder="0">
+                </section>
+                <section class="form__container form__container--gender">
+                    <label for="gender">Titel</label>
+                    <select name="gender" id="gender">
+                        <option value="option-1">Ms.</option>
+                        <option value="option-2">Mr.</option>
+                        <option value="option-3">Other</option>
+                    </select>
+                </section>
+                <section class="form__container form__container--name">
+                    <label for="first-name">First name</label>
+                    <input type="text" name="first-name" id="first-name">
+                </section>
+                <section class="form__container form__container--name">
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="last-name" id="last-name">
+                </section>
+                <section class="form__container form__container--email">
+                    <label for="first-name">Email</label>
+                    <input type="text" name="email" id="email">
+                </section>
+                <section class="form__container form__container--radio">
+                    <input type="radio" name="option" id="taxi-yes">
+                    <label for="taxi-yes">Taxi</label>
+                </section>
+                <section class="form__container form__container--radio">
+                    <input type="radio" name="option" id="taxi-no">
+                    <label for="taxi-no">No taxi</label>
+                </section>
+                <section class="form__container form__container--terms">
+                    <input type="checkbox" name="conditions" id="conditions">
+                    <p>I  agree to BONZ.AI's terms and conditions</p>
+                </section>
+                <button class="btn btn--blue">RESERVE</button>
+            </form>
+        </main>
     </div>    
     <footer class="footer">
         <h2>Connect with us</h2>

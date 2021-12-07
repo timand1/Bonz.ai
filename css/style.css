@@ -296,7 +296,7 @@ p {
     margin: 0 2rem 1rem 2rem;
 }
 
-.page__btn {
+.btn {
     font-size: 1.2rem;
     border: none;
     border-radius: 22px;
@@ -332,7 +332,7 @@ p {
     content: ""; 
     position: absolute;
     bottom: 0;
-    width: 60%;
+    width: 80%;
     height: 0.2rem;
     background: rgba(63, 59, 59, 0.762);
 }
@@ -494,90 +494,62 @@ p {
 }
 
 /* form */
-form {
-    padding: 3rem 2rem;
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-form h2 {
+.main--form h2 {
     text-align: center;
-    margin-bottom: 3rem;
+    margin: 2rem 0;
+    padding: 0 2.5rem;
 }
 
 label {
     font-size: 1.2rem;
 }
 
-form select, form input {
+.form select, .form input {
     font-size: 1rem;
 }
 
-.form__date {
+.form__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.form__container--date {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
 }
 
-.form__date--start {
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: space-between;
+.form__container--start label, .form__container--end label {
+    margin-right: 0.5rem;
 }
 
-.form__date--end {
-    display: flex;
-    justify-content: space-between;
+.form__container--radio, .form__container--terms {
+    justify-content: flex-start;
 }
-
-.form__room {
-    margin: 2rem 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.form__gender {
-    display: flex;
-    justify-content: space-between;
-}
-
-.form__name--first {
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem 0;
-}
-
-.form__name--last {
-    display: flex;
-    justify-content: space-between;    
-}
-
-.form__email {
-    display: flex;
-    justify-content: space-between;    
-    margin-top: 2rem;
+.form__container--radio input {
+    margin: 0.4rem;
 }
 
 input[type="text"] {
     max-width: 150px;
 }
 
-.form__taxi--yes {
-    margin: 2rem 0;
+.form__container p {
+    font-size: 0.8rem;  
+    margin-left: 0.4rem;  
+}
+.form__container input[type=checkbox] {
+    margin-top: 5px;    
 }
 
-.form__terms {
-    margin: 2rem 0;
-    display: flex;
-}
-
-.form__terms p {
-    font-size: 0.8rem;
-}
-
-.form__terms input[type=checkbox] {
-    margin-top: 5px;
-    
-}
-
-.form .page__btn {
+.btn--blue {
     background: rgb(163, 185, 224);
     margin-top: 3rem;
 }
@@ -718,12 +690,12 @@ input[type="text"] {
         background: #F4F4F4;
     }
 
-    .food .page__btn {
+    .food .btn {
         margin: auto 4rem 4rem auto;
         transition: 350ms;
     }
 
-    .food .page__btn:hover {
+    .food .btn:hover {
         background:rgb(50, 97, 136);
         transition: 350ms;
     }
@@ -737,7 +709,7 @@ input[type="text"] {
         margin: 2rem 0;
     }
         
-    .card__image {
+    .main--full .card__image {
         max-width: 33%;   
     }
 
@@ -811,7 +783,7 @@ input[type="text"] {
         background: rgb(221, 166, 153);
     }
 
-    .card__image--stuck {
+    .main--full .card__image--stuck {
         display: block;
         height: 400px;
         max-width: 100%;
@@ -855,24 +827,23 @@ input[type="text"] {
     }
     
     /* Booking page */
-    form {
+    .main--form {
         background: #FFF;
         border-radius: 20px;
         box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.25);
     }
 
-    .form__date {
+    .form {
+        padding: 3rem 2rem;
+    }
+
+    .form__container--date {
         flex-direction: row;
     }
 
-    .form__date--start {
-        margin-right: 2rem;
-        margin-bottom: 0;
-    }
-
-    .form__date--end {
-        display: block;
-    }
+    .form__container--start {
+        margin-right: 2rem;  
+    }   
 
     input[type="text"] {
         max-width: none;
