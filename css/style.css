@@ -347,11 +347,15 @@ p {
     color: rgba(63, 59, 59, 0.762);
 }
 
-.footer__links ul {
+.footer__links {
     display: flex;
-    justify-content: space-around;
-    list-style: none;
+    justify-content: space-around;    
     padding: 0;
+}
+
+.footer__links--left, .footer__links--right {
+    list-style: none;
+    margin-bottom: 2rem;
 }
 
 .footer__links .footer__items {
@@ -812,8 +816,7 @@ input[type="text"] {
     .card--pink .card__image:last-child {
         border-top-right-radius: 20px;
         max-width: 25%;
-    }
-    
+    }    
 
     /* Booking page */
     form {
