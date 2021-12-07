@@ -35,19 +35,25 @@
                 </ul>
             </nav>
         </header>
-        <header>
-            <h1>HOTEL BOOKING</h1>
+        <header class="header__booking">
+            <img src="/assets/photos/06-night.jpg" alt="">
+            <section>
+                <h1>HOTEL BOOKING</h1>
+            </section>
         </header>
         <form class="booking">
-            <section class="booking__start">
-                <label for="start">Start date:</label>
-                <input type="date" id="start" name="trip-start" value="2021-12-10" min="2021-12-10" max="2022-02-28">
+            <h2>BOOKING FORM</h2>
+            <section class="booking__date">
+                <article class="booking__date--start">
+                    <label for="start">Start date:</label>
+                    <input type="date" id="start" name="trip-start" value="2021-12-10" min="2021-12-10" max="2022-02-28">
+                </article>
+                <article class="booking__date--end">
+                    <label for="end">End date:</label>
+                    <input type="date" id="end" name="trip-end" value="2021-12-10" min="2021-12-10" max="2022-02-28">
+                </article>
             </section>
-            <section class="booking__end">
-                <label for="end">End date:</label>
-                <input type="date" id="end" name="trip-end" value="2021-12-10" min="2021-12-10" max="2022-02-28">
-            </section>
-            <section class="room">
+            <section class="booking__room">
                 <label for="rooms">Room Type</label>
                 <select name="rooms" id="rooms">
                     <option value="option-1">1 room</option>
@@ -57,7 +63,7 @@
                     <option value="option-5">Any available</option>
                 </select>
             </section>
-            <section class="gender">
+            <section class="booking__gender">
                 <label for="gender">Titel</label>
                 <select name="gender" id="gender">
                     <option value="option-1">Ms.</option>
@@ -65,23 +71,27 @@
                     <option value="option-3">Other</option>
                 </select>
             </section>
-            <section class="first--name">
+            <section class="booking__name--first">
                 <label for="first-name">First name</label>
                 <input type="text" name="first-name" id="first-name">
             </section>
-            <section class="last--name">
+            <section class="booking__name--last">
                 <label for="last-name">Last name</label>
                 <input type="text" name="last-name" id="last-name">
             </section>
-            <section class="booking__taxi">
+            <section class="booking__email">
+                <label for="first-name">Email</label>
+                <input type="text" name="email" id="email">
+            </section>
+            <section class="booking__taxi--yes">
                 <input type="radio" name="option" id="taxi">
                 <label for="taxi">Taxi</label>
             </section>
-            <section class="booking__taxi">
+            <section class="booking__taxi--no">
                 <input type="radio" name="option" id="taxi">
                 <label for="taxi">No taxi</label>
             </section>
-            <section class="terms">
+            <section class="booking__terms">
                 <input type="checkbox" name="conditions" id="conditions">
                 <p>I  agree to BONZ.AI's terms and conditions</p>
             </section>

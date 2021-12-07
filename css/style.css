@@ -213,7 +213,7 @@ input:checked ~ .menu {
 }
 
 .main__heading {
-    max-width: 600px;
+    max-width: 330px;
     align-self: center;
 }
 
@@ -301,6 +301,7 @@ input:checked ~ .menu {
 
 .food__container .food__container__text:nth-child(1) {
     position: relative;
+    z-index: 100;
 }
 
 .food__container .food__container__text:nth-child(1)::after {
@@ -453,7 +454,7 @@ input:checked ~ .menu {
     z-index: -10;
 }
 .about__header section {
-    background: #FFF;
+    background: #F4F4F4;
     width: 75%;
     align-self: flex-end;
     border-top-left-radius: 20px;
@@ -517,6 +518,131 @@ input:checked ~ .menu {
     max-width: 100%;
 }
 
+/* Booking Page */
+.header__booking {
+    grid-area: main;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.header__booking img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -10;
+}
+
+.header__booking section {
+    background: #F4F4F4;
+    width: 80%;
+    border-top-right-radius: 20px;
+}
+
+.header__booking h1 {
+    font-size: 3rem;
+    letter-spacing: 4px;
+    margin: 2rem 2rem;
+    text-align: center;
+}
+
+.booking {
+    grid-area: info;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+.booking select, .booking input {
+    font-size: 1rem;
+}
+
+.booking__date {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking__date--start {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking__date--end {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking__room {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking__gender {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking__name--first {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.booking__name--last {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.booking__email {
+    display: flex;
+    justify-content: space-between;    
+    margin-top: 2rem;
+}
+
+input[type="text"] {
+    max-width: 150px;
+}
+
+.booking__taxi--yes {
+    margin: 2rem 0;
+}
+
+.booking__terms {
+    margin: 2rem 0;
+    display: flex;
+}
+
+.booking__terms p {
+    font-size: 0.8rem;
+}
+
+.booking__terms input[type=checkbox] {
+    margin-top: 6px;
+    
+}
+
+.booking .page__btn {
+    background: rgb(163, 185, 224);
+    margin-top: 3rem;
+}
+
 /* Media Queries */
 @media screen and (min-width: 786px) {
     .wrapper {
@@ -527,7 +653,7 @@ input:checked ~ .menu {
         "info info info"
         "footer footer footer";
     }
-
+    /* Menu navigation */
     .header__content {
         display: none;
     }
@@ -540,12 +666,14 @@ input:checked ~ .menu {
         display: flex;
     }
 
+    /* Home Page */
     .main__content {
         margin-top: 5rem;
     }
 
     .main__heading {
-        width: 50%;
+        max-width: 600px;
+        align-self: center;
     }
     .card__container {
         flex-direction: row;
@@ -566,6 +694,22 @@ input:checked ~ .menu {
 
     .food__container__text {        
         transform: translateY(4rem);
+    }
+
+    .food__container .food__container__image:nth-child(2) {
+        position: relative;
+    }
+    
+    .food__container .food__container__text:nth-child(1)::before {
+        content: "";
+        position: absolute;
+        width: 10rem;
+        height: 2rem;
+        top: 82%;
+        right: -75%;    
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background: #F4F4F4;
     }
 
     .food__container .page__btn {
@@ -603,7 +747,7 @@ input:checked ~ .menu {
     .about__card article {
         flex-basis: 100%;
     }
-    
+        
     .about__main--image {
         max-width: 33%;   
     }
@@ -682,7 +826,6 @@ input:checked ~ .menu {
 
     .about__main--stuck {
         display: block;
-        /* box-shadow: 1px 1px 20px 4px rgb(73, 50, 50); */
         box-shadow:
             3.3px 2.6px 2.3px rgba(0, 0, 0, 0.2),
             6.3px 5px 4.8px rgba(0, 0, 0, 0.182),
@@ -710,5 +853,34 @@ input:checked ~ .menu {
         height: 400px;
         max-width: 100%;
         margin: 2rem 0;
+    }
+
+    /* Booking page */
+
+    .header__booking {
+        margin-top: 5rem;
+    }
+
+    .booking {
+        background: #FFF;
+        border-radius: 20px;
+        box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.25);
+    }
+
+    .booking__date {
+        flex-direction: row;
+    }
+
+    .booking__date--start {
+        margin-right: 2rem;
+        margin-bottom: 0;
+    }
+
+    .booking__date--end {
+        display: block;
+    }
+
+    input[type="text"] {
+        max-width: none;
     }
 }
