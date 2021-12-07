@@ -220,7 +220,7 @@ p {
     display: block;    
 }
 
-.card_cards .card__image {
+.card__image {
     max-height: 250px;
     max-width: 100%;
     display: block;
@@ -236,7 +236,6 @@ p {
 
 .food > * {
     max-width: 100%;
-    aspect-ratio: 1/1;
 }
 
 .food {
@@ -437,12 +436,35 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom; 
+    max-height: 500px;
 }
 
 .card__image--stuck {
     display: none;
 }
 
+.gallery {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.gallery h2 {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+.gallery__container {    
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.gallery__image {
+    width: 100%;
+    padding: 0 1rem;
+}
 
 /* Booking Page */
 .header--smaller {
@@ -755,12 +777,12 @@ input[type="text"] {
         background: rgb(221, 166, 153);
     }
 
-    .card--pink:last-child .card__cards:nth-child(2) {
+    .card--pink:nth-child(3) .card__cards:nth-child(2) {
         position: relative;   
-        border-radius: 0;     
+        border-radius: 0; 
     }
 
-    .card--pink:last-child .card__cards:nth-child(2)::after {
+    .card--pink:nth-child(3) .card__cards:nth-child(2)::after {
         content: "";
         position: absolute;
         width: 2rem;
@@ -772,12 +794,12 @@ input[type="text"] {
         background: rgb(221, 166, 153);
     }
 
-    .card--pink:last-child .card__cards:nth-child(3) {
+    .card--pink:nth-child(3) .card__cards:nth-child(3) {
         position: relative;
         border-radius: 0;
     }
 
-    .card--pink:last-child .card__cards:nth-child(3)::before {
+    .card--pink:nth-child(3) .card__cards:nth-child(3)::before {
         content: "";
         position: absolute;
         width: 2rem;
@@ -816,8 +838,22 @@ input[type="text"] {
     .card--pink .card__image:last-child {
         border-top-right-radius: 20px;
         max-width: 25%;
-    }    
-
+    }
+    
+    .gallery {
+        flex-direction: row;
+    }
+      
+    .gallery__container {    
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .gallery__image {
+        width: 30%;
+    }
+    
     /* Booking page */
     form {
         background: #FFF;
