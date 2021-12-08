@@ -29,7 +29,7 @@ p {
 }
 
 .navigation {
-    grid-area: header;
+    grid-area: hero;
     position: sticky;
     top: 0;
     background:steelblue;

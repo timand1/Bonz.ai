@@ -30,7 +30,7 @@ p {
     grid-template-columns: 100%;
     grid-template-areas: 
     "nav"
-    "header"
+    "hero"
     "main"
     "footer";
 }
@@ -124,17 +124,18 @@ p {
     color: rgb(24, 57, 85);
 }
 
-/* header */
-.header {
-    grid-area: header;
+/* hero header */
+.hero {
+    grid-area: hero;
     display: flex;
     flex-direction: column;
     height: 100vh;
     width: 100%;
     position: relative;
 }
+
 /* Homepage */
-.header--background {
+.hero--background {
     background-image: url("/assets/photos/09-night.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -144,24 +145,24 @@ p {
     margin-bottom: 3rem;
 }
 
-.header h2 {
+.hero h2 {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.header__text {
+.hero__text {
     display: flex;
     flex-direction: column;
 }
 
-.header__text h2 {
+.hero__text h2 {
     align-self: center;
 }
 
-.header__text--blue {
+.hero__text--blue {
     color: rgb(147, 197, 255)
 }
 
-.header__logo {
+.hero__logo {
     max-width: 330px;
     align-self: center;
 }
@@ -411,31 +412,31 @@ p {
 }
 
 /* About page */
-.header--end {    
+.hero--end {    
     justify-content: flex-end;
 }
 
-.header .header__image {
+.hero .hero__image {
     width: 100%;
     height: 100%;
     position: absolute;
     left: 0;
     z-index: -10;
 }
-.header .header__text--right {
+.hero .hero__text--right {
     background: #F4F4F4;
     width: 75%;
     align-self: flex-end;
     border-top-left-radius: 20px;
 }
 
-.header__text--right h1 {
+.hero__text--right h1 {
     font-size: 3rem;
     letter-spacing: 4px;
     margin: 2rem 2rem;
 }
 
-.header__text--right p {
+.hero__text--right p {
     margin: 1rem 0;
     padding: 0 2rem;
 }
@@ -497,13 +498,13 @@ p {
 }
 
 /* Booking Page */
-.header--smaller {
+.hero--smaller {
     height: 65vh;
     justify-content: flex-end;
     margin-bottom: 3rem;
 }
 
-.header--smaller .header__image {
+.hero--smaller .hero__image {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -511,13 +512,13 @@ p {
     z-index: -10;
 }
 
-.header .header__text--left {
+.hero .hero__text--left {
     background: #F4F4F4;
     width: 80%;
     border-top-right-radius: 20px;
 }
 
-.header--smaller h1 {
+.hero--smaller h1 {
     font-size: 3rem;
     letter-spacing: 4px;
     margin: 2rem 2rem;
@@ -600,7 +601,7 @@ input[type="text"] {
 
 /* Media Queries */
 @media screen and (max-width: 370px) {
-    .header--background h2 {
+    .hero--background h2 {
         font-size: 1.1rem;
     } 
 }
@@ -620,7 +621,7 @@ input[type="text"] {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
         "nav nav nav"
-        "header header header"
+        "hero hero hero"
         "main main main"
         "footer footer footer";
     }
@@ -694,7 +695,7 @@ input[type="text"] {
     }
 
     /* Home Page */
-    .header__logo {
+    .hero__logo {
         max-width: 600px;
         align-self: center;
     }
