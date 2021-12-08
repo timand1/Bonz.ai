@@ -141,7 +141,7 @@ label, input[type="search"] {
     position: relative;
 }
 
-.hero--background {
+.hero--fixed {
     background-image: url("/assets/photos/09-night.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -319,7 +319,7 @@ label, input[type="search"] {
     margin: 1rem;
 }
 
-.card__image--stuck {
+.card__image--fixed {
     display: none;
     background-image: url("/assets/photos/01-day.jpg");
     background-repeat: no-repeat;
@@ -587,7 +587,7 @@ input[type="text"] {
 /* Media Queries */
 /* Smaller mobile phones */
 @media screen and (max-width: 370px) {
-    .hero--background h2 {
+    .hero--fixed h2 {
         font-size: 1.1rem;
     } 
 }
