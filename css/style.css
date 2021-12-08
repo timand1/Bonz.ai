@@ -819,7 +819,7 @@ input[type="text"] {
         max-width: 33%;  
     }  
 
-    .card__image--stuck {
+    .card__image--fixed {
         display: block;
         height: 400px;
         max-width: 100%;
