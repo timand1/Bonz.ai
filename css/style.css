@@ -324,12 +324,14 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 1.5rem;
 }
 
 .btn--transparent {
     background: transparent;
     border: 1px solid rgba(0, 0, 0, 0.8);
     border-radius: 8px;
+    transition: 350ms;
 }
 
 /* Footer */
@@ -775,6 +777,11 @@ input[type="text"] {
         order: 2;
     }
 
+    .btn--transparent:hover {
+        background: rgba(164, 194, 224, 0.5); 
+        box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);       
+        transition: 350ms;
+    }
     /* About page */
     .card--pink { 
         margin: 3rem 0;
