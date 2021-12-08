@@ -50,22 +50,22 @@ p {
 }
 
 .navigation .menu {
-    transform: translateY(-120%);
-    transition: 450ms ease-in-out;
-    position: fixed;    
+    position: fixed; 
     top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 4rem;     
     background: steelblue;
     box-shadow: inset 29px 29px 59px rgb(50, 97, 136);
     margin: 0;
     padding: 0;
     list-style: none;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem;  
     text-decoration: underline;  
     text-underline-offset: 2rem;
+    transform: translateY(-120%);
+    transition: 450ms ease-in-out;
     background-image: url("/assets/logo/bonz.ai-logo-black_landscape.svg");
     background-repeat: no-repeat;
     background-size: 40%;
@@ -110,17 +110,17 @@ p {
     margin-top: 10vh;
 }
 
-.menu .menu__links, .menu--desktop .menu__links {    
+.menu .menu__links {    
     text-decoration: none;
     color: #000;
     font-size: 1.2rem;
 }
 
-.menu .menu__links:visited, .menu--desktop .menu__links:visited {
+.menu .menu__links:visited {
     color: #000;
 }
 
-.menu .menu__links:active, .menu--desktop .menu__links:active {
+.menu .menu__links:active {
     color: rgb(24, 57, 85);
 }
 
@@ -319,6 +319,7 @@ p {
     display: flex;
     min-height: 400px;
     border-radius: 0;
+    box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.25);
 }
 
 .card__cards--transparent .card__container {
@@ -374,41 +375,41 @@ p {
     color: rgba(63, 59, 59, 0.762);
 }
 
-.footer__links {
+.footer__menu {
     display: flex;
     justify-content: space-around;    
     padding: 0;
 }
 
-.footer__links--left, .footer__links--right {
+.footer__menu--left, .footer__menu--right {
     list-style: none;
     margin-bottom: 2rem;
 }
 
-.footer__links .footer__items {
+.footer__menu .footer__items {
     margin: 0.5rem 0;
 }
 
-.footer__links--left, .footer__links--right {
+.footer__menu--left, .footer__menu--right {
     display: flex;
     flex-direction: column;
 }
 
-.footer__links--bottom {
+.footer__menu--bottom {
     justify-self: center;
 }
 
-.footer__links .footer__link {
+.footer__menu .footer__link {
     text-decoration: none;
 }
 
-.footer__links .footer__link, .footer__link:visited  {
+.footer__menu .footer__link, .footer__link:visited  {
     color: rgb(56, 50, 50);
 }
 
-.footer__links .footer__link:hover {
+.footer__menu .footer__link:hover {
     color: rgb(43, 23, 23);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* About page */
