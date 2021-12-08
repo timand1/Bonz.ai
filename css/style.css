@@ -375,6 +375,10 @@ p {
     color: rgba(63, 59, 59, 0.762);
 }
 
+.footer__social .fa:hover {
+    color: rgba(83, 109, 158);
+}
+
 .footer__menu {
     display: flex;
     justify-content: space-around;    
@@ -501,6 +505,7 @@ p {
 
 /* Rooms */
 input[type="search"] {    
+    font-size: 1.2rem;
     margin: 0 1rem;
     padding: 0.2rem;
 }
