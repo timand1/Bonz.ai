@@ -490,7 +490,7 @@ label, input[type="search"] {
     margin-bottom: 2rem;
 }
 
-.footer__menu .footer__items {
+.footer__items {
     margin: 0.5rem 0;
 }
 
@@ -499,19 +499,15 @@ label, input[type="search"] {
     flex-direction: column;
 }
 
-.footer__menu--bottom {
-    justify-self: center;
-}
-
-.footer__menu .footer__link {
+.footer__link {
     text-decoration: none;
 }
 
-.footer__menu .footer__link, .footer__link:visited  {
+.footer__link, .footer__link:visited  {
     color: rgb(56, 50, 50);
 }
 
-.footer__menu .footer__link:hover {
+.footer__link:hover {
     color: rgb(43, 23, 23);
     font-weight: 500;
 }
