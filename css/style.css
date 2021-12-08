@@ -436,6 +436,11 @@ label, input[type="search"] {
     margin-top: 3rem;
 }
 
+/* Cheating with a-tag, since JS is next year */
+.btn__link {
+    align-self: center;
+}
+
 /* Footer */
 .footer {
     grid-area: footer;
