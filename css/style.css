@@ -371,7 +371,7 @@ p {
     margin-bottom: 2rem;
 }
 
-.footer__social .fa:visited {
+.footer__social .fa, .footer__social .fa:visited {
     color: rgba(63, 59, 59, 0.762);
 }
 
@@ -446,6 +446,7 @@ p {
 /* main */
 .card--pink {
     gap: 2rem;
+    margin-top: 3rem;
 }
 
 .card--pink {
@@ -498,6 +499,12 @@ p {
     padding: 0 1rem;
 }
 
+/* Rooms */
+input[type="search"] {    
+    margin: 0 1rem;
+    padding: 0.2rem;
+}
+
 /* Booking Page */
 .hero--smaller {
     height: 65vh;
@@ -527,29 +534,21 @@ p {
 }
 
 /* form */
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 0 1rem;
-}
-
 .main--form h2 {
     text-align: center;
     margin: 2rem 0;
     padding: 0 2.5rem;
 }
 
-.room {
-    display: flex;
-    flex-direction: column;    
-    align-items: center;
-    max-width: 600px;
+.main--form .card__cards--transparent {
     margin-bottom: 2rem;
 }
 
-.room__image {
-    max-width: 30%;
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
 }
 
 label {
@@ -764,8 +763,7 @@ input[type="text"] {
         flex-direction: column;
         gap: 2rem;
         width: 100%;        
-    }
-    
+    }    
 
     .card__cards--transparent {
         flex-direction: row;
@@ -775,7 +773,7 @@ input[type="text"] {
         max-width: 50%;
     }
 
-    .card__cards--transparent:nth-child(2) .card__image {
+    .card__cards--transparent:nth-child(even) .card__image {
         order: 2;
     }
 
@@ -921,13 +919,14 @@ input[type="text"] {
         box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.25);
     }
 
-    .room {
-        flex-direction: row;
-        justify-content: space-evenly;
+    .main--form .card {
+        max-width: 60%;
+        margin: 0 auto;        
     }
 
-    .room h3 {
-        align-self: center;
+    .main--form .card__image, .main--form .card__cards--transparent {
+        max-height: 300px;
+        min-height: 200px;
     }
 
     .form {
