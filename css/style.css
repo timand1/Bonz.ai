@@ -376,10 +376,6 @@ label, input[type="search"] {
     margin-top: 3rem;
 }
 
-.food > * {
-    max-width: 100%;
-}
-
 .food {
     display: flex;
     flex-direction: column;
@@ -419,7 +415,11 @@ label, input[type="search"] {
     background: rgb(207, 197, 197);
 }
 
-.food .food__image:nth-child(3) {
+.food__image {
+    max-width: 100%;
+}
+
+.food__image:nth-child(3) {
     margin-top: 2rem;
 }
 
@@ -450,7 +450,6 @@ label, input[type="search"] {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
 .btn--transparent {
     background: transparent;
     border: 1px solid rgba(0, 0, 0, 0.8);
@@ -463,7 +462,7 @@ label, input[type="search"] {
     margin-top: 3rem;
 }
 
-/* Cheating with a-tag, since JS is next year */
+/* Cheating with a-tag, since JS is next year *hype* */
 .btn--link {
     text-decoration: none;
     color: #000
@@ -649,21 +648,14 @@ input[type="text"] {
 
     /* Menu navigation */
     .navigation {
-        background: #FFF;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        background: #FFF;        
     }
 
     .fa-bars, .navigation input, .navigation__logo {
         display: none;
-    }
-
-    .navigation {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;       
-        padding: 1rem 2rem;
-        z-index: 9999;
-        background: #FFF;
-        box-shadow: none;
     }
 
     .navigation__logo--desktop {    
