@@ -587,6 +587,8 @@ input[type="text"] {
 }
 
 .footer__menu--left, .footer__menu--right {
+    flex-direction: column;
+    justify-content: flex-start;
     list-style: none;
     margin-bottom: 2rem;
     padding: 0;
@@ -594,11 +596,6 @@ input[type="text"] {
 
 .footer__items {
     margin: 0.5rem 0;
-}
-
-.footer__menu--left, .footer__menu--right {
-    display: flex;
-    flex-direction: column;
 }
 
 .footer__link {
