@@ -591,7 +591,6 @@ input[type="text"] {
     justify-content: flex-start;
     list-style: none;
     margin-bottom: 2rem;
-    padding: 0;
 }
 
 .footer__items {
